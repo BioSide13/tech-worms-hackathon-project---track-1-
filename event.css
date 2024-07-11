@@ -26,7 +26,7 @@ background-color: #ECDEC1;
 }
 .right-image{
     
-    height: 100%;
+    
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -116,7 +116,7 @@ display: grid;
 grid-template-columns: repeat(7, 1fr);
 gap: 25px;
 }
-.calendar-dates li {
+.calendar-dates button {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -136,7 +136,7 @@ gap: 25px;
     font-size: 20px;
     
 }
-.calendar-dates li::after{
+.calendar-dates button::after{
     content: "";
     width: 5px;
     
@@ -150,23 +150,32 @@ gap: 25px;
 
 
 
-.calendar-dates li:nth-child(odd) {
+.calendar-dates button:nth-child(odd) {
     background-color: transparent;
     color: #99BB7F;
     box-shadow: 0px 2px 2px #898484;
     ;
     
 }
-.calendar-dates li:nth-child(even){
+.calendar-dates button:nth-child(even){
     color: white;
 }
 
-/* .calendar-dates li:hover {
-    background-color: #e6e6e6;
-} */
+.calendar-dates button:hover {
+    box-shadow: 0px 2px 2px #898484;
+    background-color: rgba(63, 61, 61, 0.178);
+}
 
-.calendar-dates li.active {
-    background-color: #007bff;
+.calendar-dates button.active {
+    background-image: url(/assets/events/the-knight.png);
     border-radius: 50% ;
+    border: none; 
     color: #fff;
+    filter: invert();
+}
+button{
+    border: none;
+}
+.calendar-current-date::first-letter{
+    color: #99BB7F;
 }
