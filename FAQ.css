@@ -1,0 +1,30 @@
+body{
+    background-color:#ECDEC1;
+}
+.title{
+    font-size:100px;
+    text-align: center;
+    font-weight: bold;
+    padding:0px;
+}
+.letter:nth-child(odd){
+    color:#99BB7F;
+    margin-top:-50px;
+}
+.letter:nth-child(even){
+    color:#FFFDF6;
+    margin-top:-100px;
+}
+.faq{
+    width:80%;
+    height:auto;
+    margin-left:120px;
+    margin-top:100px;
+}
+.logo{
+    width:30%;
+    height:30%;
+    margin-top:-10px;
+    margin-left:10px;
+    border-radius:13%;
+}
