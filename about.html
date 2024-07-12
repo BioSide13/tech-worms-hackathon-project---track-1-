@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./sipnplay (1).png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./about.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/home.js"></script>
+    <!--Header - Logo/NavBar-->
+    <div class="header">
+        <img src="assets\logo turtle-green.png" alt="logo_pic" id="logo_pic">
+        <img src="assets\sip and play logo.png" alt="logo_word" id="logo_word">
+    </div>
+    <!--Flipping Card Div-->
+    <center><div class="flip-card" onclick="this.classList.toggle('hover');">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="click-here"><p>Click Here To Flip! --></p></div>
+            <img src="assets\about\box_front.png" alt="Avatar" id="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <div class="click-here"><p>Click Here To Flip! --></p></div>
+            <img src="assets\about\box_back.png" alt="back" id="back">
+          </div>
+        </div>
+      </div></center>
+  </body>
+</html>
