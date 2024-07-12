@@ -176,6 +176,101 @@ gap: 25px;
 button{
     border: none;
 }
-.calendar-current-date::first-letter{
+/* .calendar-current-date::first-letter{
     color: #99BB7F;
+} */
+
+
+.appointment-container{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: fit-content;
+    width: 500px;
+    padding: 40px;
+}
+.appointment-container h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #99BB7F;;
+}
+.appointment-container p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.seperator{
+    width: 100%;
+    height: 8px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 8px solid #99BB7F;
+}
+.info-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.icons-container i{
+   
+    color: #99BB7F;
+    font-size: 25px;
+    margin-bottom: 12px;
+
+}
+.timing{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #99BB7F;
+    text-align: left;
+    
+}
+#eventDescription{
+    color:#99BB7F;
+}
+
+.back-to-flip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    padding:30px;
+    height: 600px;
+}
+.inner-border{
+    border: 6px solid black;
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo:nth-child(1){
+    height: 100px;
+
+    width: auto;
+    object-fit: cover;
 }
