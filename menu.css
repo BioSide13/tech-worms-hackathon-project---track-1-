@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Poppins;
+  color: white;
+  background-color: #99bb7f;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+header{
+  height: 15px;
+  width: 90px;
+  margin-bottom: 50px;
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  height: 100vh;
+position: relative;
+}
+
+.menu{
+  height: 40vh;
+  width: 30vh;
+}
+
+  
+
+
+.menu .title{
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+.drinks{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+  .tray{
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    border-radius: 50%;
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .coffee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .price {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+.banner:has(.product:hover) .rock img:nth-child(1) {
+  transform: translateX(-50%) translateY(50px);
+}
+.banner:has(.product:hover) .rock img:nth-child(2) {
+  transform: translateX(-100px) translateY(100px);
+}
+.change{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.change button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  margin: 0 auto
+  
+}
+button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .soda {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .soda {
+    width: 250px;
+  }
+  header img {
+    display: none;
+  }
+}
