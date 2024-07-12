@@ -6,6 +6,8 @@ body {
   color: white;
   background-color: #99bb7f;
 }
+
+
 * {
   padding: 0;
   margin: 0;
@@ -40,6 +42,8 @@ position: relative;
 .drinks{
   font-size: 50px;
   font-weight: bold;
+  max-width: 250px;
+  min-width: 250px;
 }
 
   .tray{
@@ -61,14 +65,10 @@ position: relative;
     display: flex;
     flex-direction: column;
   }
-  
+  /* transform: translateX(-50%) translateY(50px);
+  ransform: translateX(-100px) translateY(100px); */
 
-.banner:has(.product:hover) .rock img:nth-child(1) {
-  transform: translateX(-50%) translateY(50px);
-}
-.banner:has(.product:hover) .rock img:nth-child(2) {
-  transform: translateX(-100px) translateY(100px);
-}
+  
 .change{
   display: flex;
   justify-content: space-evenly;
