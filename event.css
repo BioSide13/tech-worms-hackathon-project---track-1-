@@ -100,17 +100,23 @@ body {
 }
 
 .calendar-body {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+
 }
 
 .calendar-weekdays {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-  font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 .calendar-dates {
   list-style: none;
