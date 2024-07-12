@@ -10,8 +10,60 @@
 body{
 background-color: #ECDEC1;
 }
-.header{
-  margin-bottom: 50px;
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: #ECDEC1;
+  padding: 10px;
+}
+
+.nav-toggle {
+  background-color: #ECDEC1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ECDEC1;
+  flex-direction: row;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.nav-links li button img {
+  width: 80px;
+  height: 60px;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+#hand {
+  width: 80px;
+  height: 80px;
+  rotate: 270deg;
 }
 
 #logo_pic {
@@ -58,8 +110,7 @@ background-color: #ECDEC1;
     position: absolute;
     bottom: 20px;
     right: 30px;
-    color: #ffffff;
-    font-weight: bold;
+    color: #3e522b;
     padding-left: 20px;
     padding-right: 20px;
   }

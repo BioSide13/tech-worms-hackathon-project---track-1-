@@ -14,12 +14,21 @@
     <div class="header">
         <img src="assets\about\logo turtle-green.png" alt="logo_pic" id="logo_pic">
         <img src="assets\about\sip and play logo.png" alt="logo_word" id="logo_word">
+        <nav class="navbar">
+          <ul class="nav-links" id="navLinks">
+            <li><button><img src="assets/nav/home.png" alt="Home" href="about.html"></button></li>
+            <li><a href="event.html"><button><img src="assets/nav/events.png" alt="Events"></button></a></li>
+            <li><a href="menu.html"><button><img src="assets/nav/menu.png" alt="Menu"></button></a></li>
+            <li><a href="FAQ.html"><button></button><button><img src="assets/nav/faq.png" alt="FAQ"></button></a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle"><img src="assets/nav/hand-cards.png" alt="hand" id="hand"></button>
+      </nav>
     </div>
     <!--Flipping Card Div-->
     <center><div class="flip-card" onclick="this.classList.toggle('hover');">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <div class="click-here"><p>Click Here To Reveal! --></p></div>
+            <div class="click-here"><p>Click Here To Flip! --></p></div>
             <img src="assets\about\box_front.png" alt="Avatar" id="Avatar">
           </div>
           <div class="flip-card-back">
@@ -28,5 +37,8 @@
           </div>
         </div>
       </div></center>
+      <center><div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.265051111247!2d-73.9895203231948!3d40.66812857140022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b963c296a77%3A0x33cab105836ef465!2sSip%20%26%20Play!5e0!3m2!1sen!2sin!4v1720777967039!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div></center>
+      <script src="./nav_bar.js"></script>
   </body>
 </html>
