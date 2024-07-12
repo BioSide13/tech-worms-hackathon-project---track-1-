@@ -92,7 +92,7 @@ body {
 .right-image {
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 130;
   left: 1154px;
   z-index: 99;
 }
