@@ -1,330 +1,404 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
-body{
-background-color: #ECDEC1;
+body {
+  background-color: #ecdec1;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
-
 
 .calendar-container {
-    
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-   
-    
-}
-.right-image{
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 1420px;
-    z-index:99;
-
-}
-#bishop{
-    transform: rotate(343deg);
-}
-#knight{
-    transform: rotate(18deg);
-    position: relative;
-    top: 90px;
-    left: 18px;
-    width: 100px;
-
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 550px;
+  margin-bottom: 30px;
 }
 
-@media (max-width: 1200px) {
-    .right-image {
-        display:none;
-    }
+.right-image {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 1154px;
+  z-index: 99;
+}
+#bishop {
+  transform: rotate(343deg);
+}
+#knight {
+  transform: rotate(18deg);
+  position: relative;
+  top: 90px;
+  left: 18px;
+  width: 100px;
 }
 
-.left-image{
-    
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    top: 439px;
-    left: 155px;
-    z-index:99;
-
+.left-image {
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 439px;
+  left: 220px;
+  z-index: 99;
 }
-#rooks{
-    transform: rotate(336deg);
-    position: absolute;
-    top: -154px;
-    left: -435px;
+#rooks {
+  transform: rotate(336deg);
+  position: absolute;
+  top: -122px;
+  left: -419px;
 
-assets/events/logo turtle.png}
-#pawn{
-    transform: rotate(5deg);
-    position: absolute;
-    top: -254px;
-    left: -312px;
-    
+  background-image: url(/assets/events/the-rooks.png);
+}
+
+#pawn {
+  transform: rotate(5deg);
+  position: absolute;
+  top: -311px;
+  left: -316px;
 }
 
 @media (max-width: 1200px) {
-    .left-image {
-        display:none;
-    }
+  .left-image {
+    display: none;
+  }
 }
 
 .calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .calendar-current-date {
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 7px;
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 7px;
 }
 
 .calendar-navigation {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  position: relative;
 }
 
-
 .material-symbols-rounded {
-    font-family: 'Material Symbols Rounded', sans-serif;
-    font-size: 24px;
-    cursor: pointer;
+  font-family: "Material Symbols Rounded", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .calendar-body {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
 }
 
 .calendar-weekdays {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    font-weight: bold;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  font-weight: bold;
 }
 .calendar-dates {
-list-style: none;
-display: grid;
-grid-template-columns: repeat(7, 1fr);
-gap: 25px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 25px;
 }
 .calendar-dates button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    height: 120px;
-    width: 120px;
-    border-radius: 5px;
-    background-color: #99BB7F;
-    font-size: 16px;
-    margin-right: -20px;
-    margin-bottom: -20px;
-    cursor: pointer;
-    font-weight: bolder;
-    font-family: "Inter", sans-serif;
-    position: relative; /* Add this line */
-    top: 10px; /* Adjust the value to change the vertical position */
-    left: 10px; /* Adjust the value to change the horizontal position */
-    font-size: 20px;
-    
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #99bb7f;
+  font-size: 16px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
 }
-.calendar-dates button::after{
-    content: "";
-    width: 5px;
-    
-    
+.calendar-dates button::after {
+  content: "";
+  width: 5px;
 }
-
-
-/* .calendar-dates li:nth-child(n){
-    position: absolute;
-} */
-
-
 
 .calendar-dates button:nth-child(odd) {
-    background-color: transparent;
-    color: #99BB7F;
-    box-shadow: 0px 2px 2px #898484;
-    ;
-    
+  background-color: transparent;
+  color: #99bb7f;
+  box-shadow: 0px 2px 2px #898484;
 }
-.calendar-dates button:nth-child(even){
-    color: white;
+.calendar-dates button:nth-child(even) {
+  color: white;
 }
 
 .calendar-dates button:hover {
-    box-shadow: 0px 2px 2px #898484;
-    background-color: rgba(63, 61, 61, 0.178);
+  box-shadow: 0px 2px 2px #898484;
+  background-color: rgba(63, 61, 61, 0.178);
 }
 
 .calendar-dates button.active {
-    background-image: url(/assets/events/the-knight.png);
-    border-radius: 50% ;
-    border: none; 
-    color: #fff;
-    filter: invert();
-}
-button{
-    border: none;
-}
-/* .calendar-current-date::first-letter{
-    color: #99BB7F;
-} */
+  background-image: url(/assets/events/the-knight.png);
+  border-radius: 50%;
 
+  border: none;
+  color: #fff;
+  filter: invert();
+}
+button {
+  border: none;
+}
 
-.appointment-container{
-    
-    font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 12px;
-    height: fit-content;
-    width: 500px;
-    padding: 40px;
-    box-shadow: 0px 2px 2px #898484;
+.appointment-container {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 12px;
+  height: fit-content;
+  width: 500px;
+  padding: 40px;
+  box-shadow: 0px 2px 2px #898484;
 }
 .appointment-container {
-   
-        display: none;
-        position: fixed;
-        
-        top: 120px;
-        right: 406px;
-        
-        z-index: 999;
+  display: none;
+  position: fixed;
+
+  top: 120px;
+  right: 406px;
+
+  z-index: 999;
 }
 
-.appointment-container h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #99BB7F;;
+.appointment-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #99bb7f;
 }
-.appointment-container p{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.appointment-container p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.seperator{
-    width: 100%;
-    height: 8px;
-    background-color: black;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 8px solid #99BB7F;
+.seperator {
+  width: 100%;
+  height: 8px;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 8px solid #99bb7f;
 }
-.info-container{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 20px;
+.info-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
 }
-.icons-container i{
-   
-    color: #99BB7F;
-    font-size: 25px;
-    margin-bottom: 12px;
-
+.icons-container i {
+  color: #99bb7f;
+  font-size: 25px;
+  margin-bottom: 12px;
 }
-.timing{
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #99BB7F;
-    text-align: left;
-    
+.timing {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #99bb7f;
+  text-align: left;
 }
-#eventDescription{
-    color:#99BB7F;
+#eventDescription {
+  color: #99bb7f;
 }
 
-.back-to-flip-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-    margin: 20px;
-    border-radius: 10px;
-    padding:30px;
-    height: 600px;
-    background-color: #99BB7F;
-    position: relative;
+.back-to-flip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  margin: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  height: 600px;
+  background-color: #99bb7f;
+  position: relative;
 }
-.inner-border{
-    border: 6px solid rgb(255, 255, 255);
-    width: 100%;
-    height: 550px;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+.inner-border {
+  border: 6px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-.logo img:nth-child(1){
+.logo img:nth-child(1) {
+  height: 300px;
+}
+.logo img:nth-child(2) {
+  height: 45px;
+}
+#turtle {
+  position: absolute;
+  bottom: 109px;
+  right: -40px;
+}
+#sparkle {
+  position: absolute;
+  bottom: 336px;
+
+  height: 100px;
+  left: 193px;
+}
+@media (max-width: 768px) {
+    body{
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .calendar-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .right-image {
+        left: auto;
+        right: 0;
+        display: none;
+    }
+
+    .left-image {
+        display: none;
+    }
+
+    .calendar-body {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .calendar-dates {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        margin-left: 53px;
+    }
+
+    .calendar-dates button {
+        height: 80px;
+        width: 80px;
+        font-size: 14px;
+        margin-right: 0;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+    }
+
+    .appointment-container {
+        width: 100%;
+        right: 0;
+        left: 0;
+    }
+
+    .back-to-flip-container {
+        margin-left: 47px;
+    }
+
+    .inner-border {
+        padding: 10px;
+    }
+
+    .logo img:nth-child(2) {
+        height: 39px;
+    }
+    #turtle{
+        width: 200px;
+        height: 200px;
+        bottom: 2px;
+        right: 65px;
+    }
+    #sparkle{
+        top: 26px;
+        left: 146px;
+    }
+    .calendar-dates button.active{
+       object-fit: cover;
+
     
-    height: 300px; 
-}
-.logo img:nth-child(2){
-    height: 45px;
-}
-#turtle{
+        
     
-    position: absolute;
-    bottom: 109px;
-    right: -40px;
-}
-#sparkle{
-    position: absolute;
-    bottom: 336px;
-    
-    height: 100px;
-    left: 193px;
+    }
 }
 
-@media (max-width: 1200px) {
-    .log-1 {
-        display:none;
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 10px;
+    }
+
+    .calendar-current-date {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+
+    .calendar-navigation {
+        gap: 10px;
+    }
+
+    .calendar-dates button {
+        height: 60px;
+        width: 60px;
+        font-size: 12px;
+    }
+
+    .appointment-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .back-to-flip-container {
+        padding: 20px;
+    }
+
+    .inner-border {
+        padding: 10px;
+    }
+
+    .logo img:nth-child(1) {
+        height: 150px;
     }
 }
