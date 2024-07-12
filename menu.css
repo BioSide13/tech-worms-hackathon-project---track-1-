@@ -113,3 +113,68 @@ button:hover{
     display: none;
   }
 }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background-color: #99bb7f;
+  padding: 10px;
+}
+
+.nav-toggle {
+  background-color: #99bb7f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #99bb7f;
+  flex-direction: row;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.nav-links li button img {
+  width: 80px;
+  height: 60px;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+#hand {
+  width: 80px;
+  height: 80px;
+  rotate: 270deg;
+}
+
+#logo_pic {
+  height: 150px;
+  width: 150px;
+}
+
+#logo_word {
+  height: 150px;
+  width: 300px;
+}
